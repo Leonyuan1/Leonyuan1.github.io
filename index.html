@@ -23,17 +23,27 @@
             height: auto;
             margin: 20px 0;
         }
-        /* 设置音频容器为flex布局 */
         .audio-container {
             display: flex;
-            justify-content: space-around; /* 让音频播放器均匀分布 */
-            flex-wrap: wrap; /* 允许换行 */
-            gap: 20px; /* 音频播放器之间的间隔 */
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
             margin-top: 20px;
         }
         audio {
             margin: 10px 0;
-            width: 22%; /* 每个音频播放器占容器宽度的22% */
+            width: 22%;
+        }
+        .link {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .link a {
+            text-decoration: none;  /* 去掉超链接下划线 */
+            color: #007bff;  /* 设置超链接颜色 */
+        }
+        .link a:hover {
+            text-decoration: underline;  /* 悬停时添加下划线 */
         }
     </style>
 </head>
@@ -41,13 +51,17 @@
 
     <h1>demo</h1>
 
+    <!-- 新增的超链接文本 -->
+    <div class="link">
+        <p><a href="https://your-link-here.com" target="_blank">pape demo code</a></p>
+    </div>
+
     <div class="content">
         <p>这里是一段文字，可以介绍一些内容。</p>
 
         <!-- 图片路径替换为你的 GitHub 图片 URL -->
         <img src="https://github.com/Leonyuan1/Leonyuan1.github.io/raw/main/framwork.png" alt="framwork">
 
-        <!-- 音频播放器容器 -->
         <div class="audio-container">
             <audio controls>
                 <source src="audio1.mp3" type="audio/mp3">
