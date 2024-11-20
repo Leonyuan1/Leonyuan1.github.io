@@ -41,9 +41,14 @@
         .link a {
             text-decoration: none;  /* 去掉超链接下划线 */
             color: #007bff;  /* 设置超链接颜色 */
+            margin: 0 10px;
         }
         .link a:hover {
             text-decoration: underline;  /* 悬停时添加下划线 */
+        }
+        .audio-title {
+            font-weight: bold;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -53,7 +58,9 @@
 
     <!-- 新增的超链接文本 -->
     <div class="link">
-        <p><a href="https://your-link-here.com" target="_blank">pape demo code</a></p>
+        <p><a href="https://your-link-here-1.com" target="_blank">pape demo code 1</a></p>
+        <p><a href="https://your-link-here-2.com" target="_blank">pape demo code 2</a></p>
+        <p><a href="https://your-link-here-3.com" target="_blank">pape demo code 3</a></p>
     </div>
 
     <div class="content">
@@ -66,41 +73,73 @@ At the end, we discuss the essential policy and consensus for AI development to 
         <img src="https://github.com/Leonyuan1/Leonyuan1.github.io/raw/main/framwork.png" alt="framwork">
 
         <div class="audio-container">
-            <audio controls>
-                <source src="audio1.mp3" type="audio/mp3">
-                您的浏览器不支持音频元素。
-            </audio>
-            <audio controls>
-                <source src="audio2.mp3" type="audio/mp3">
-                您的浏览器不支持音频元素。
-            </audio>
-            <audio controls>
-                <source src="audio3.mp3" type="audio/mp3">
-                您的浏览器不支持音频元素。
-            </audio>
-            <audio controls>
-                <source src="audio4.mp3" type="audio/mp3">
-                您的浏览器不支持音频元素。
-            </audio>
+            <!-- 第一列音频及文字 -->
+            <div>
+                <p class="audio-title">音频 1</p>
+                <audio controls>
+                    <source src="audio1.mp3" type="audio/mp3">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </div>
+
+            <div>
+                <p class="audio-title">音频 2</p>
+                <audio controls>
+                    <source src="audio2.mp3" type="audio/mp3">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </div>
+
+            <div>
+                <p class="audio-title">音频 3</p>
+                <audio controls>
+                    <source src="audio3.mp3" type="audio/mp3">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </div>
+
+            <div>
+                <p class="audio-title">音频 4</p>
+                <audio controls>
+                    <source src="audio4.mp3" type="audio/mp3">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </div>
         </div>
 
         <div class="audio-container">
-            <audio controls>
-                <source src="audio5.mp3" type="audio/mp3">
-                您的浏览器不支持音频元素。
-            </audio>
-            <audio controls>
-                <source src="audio6.mp3" type="audio/mp3">
-                您的浏览器不支持音频元素。
-            </audio>
-            <audio controls>
-                <source src="audio7.mp3" type="audio/mp3">
-                您的浏览器不支持音频元素。
-            </audio>
-            <audio controls>
-                <source src="audio8.mp3" type="audio/mp3">
-                您的浏览器不支持音频元素。
-            </audio>
+            <!-- 第二列音频及文字 -->
+            <div>
+                <p class="audio-title">音频 5</p>
+                <audio controls>
+                    <source src="audio5.mp3" type="audio/mp3">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </div>
+
+            <div>
+                <p class="audio-title">音频 6</p>
+                <audio controls>
+                    <source src="audio6.mp3" type="audio/mp3">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </div>
+
+            <div>
+                <p class="audio-title">音频 7</p>
+                <audio controls>
+                    <source src="audio7.mp3" type="audio/mp3">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </div>
+
+            <div>
+                <p class="audio-title">音频 8</p>
+                <audio controls>
+                    <source src="audio8.mp3" type="audio/mp3">
+                    您的浏览器不支持音频元素。
+                </audio>
+            </div>
         </div>
     </div>
 
